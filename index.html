@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+	<link rel="stylesheet" type="text/css" href="assest/css/style.css">
+	 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+<header class="header">
+	<div class="row">
+		<div class="ms"></div>
+		<div class="main-menu" id="menu">
+			<nav class="navbar" id= "navbar">
+				<div class="logo">
+					<img src="assest/img/logo.png">
+				</div>
+				<div class="menu">
+			  	<ul class="sub-menu">
+			  	<li class="menu-item">
+			  		<a href="#" class="active">HOME</a>
+			  	</li>
+			  	<li class="menu-item">
+			  		<a href="#">SHOP</a>
+			  		  <ul  class="sub-menu-child">
+			  	      	<li class="menu-item-child"><a href="#">SHOP CATEGORY</a></li>
+			  	      	<li class="menu-item-child"><a href="#">PRODUCT DETAILS</a></li>
+
+			  	      	<li class="menu-item-child"><a href="#">PRODUCT CHECKOUT</a></li>
+			            <li class="menu-item-child"><a href="#">SHOPPING CART</a></li>
+
+			  	      	<li class="menu-item-child"><a href="#">CONFIRMATION</a></li>
+			  	      </ul>
+			  	</li>
+			  	<li class="menu-item">
+			  		<a href="#">BLOG</a>
+
+			  	      <ul class="sub-menu-child">
+			  	      	<li class="menu-item-child"><a href="#">BLOG</a></li>
+			  	      	<li class="menu-item-child"><a href="#">BLOG DETAILS</a></li>
+			  	      </ul>
+			  	</li>
+			  	<li class="menu-item">
+			  		<a href="#">PAGES</a>
+			  	      <ul class="sub-menu-child">
+			  	      	<li class="menu-item-child"><a href="#">LOGIN</a></li>
+			  	      	<li class="menu-item-child"><a href="#">TRACKING</a></li>
+
+			  	      	<li class="menu-item-child"><a href="#">ELEMENTS</a></li>
+
+			  	      </ul>
+			  	</li>
+			  	<li class="menu-item">
+			  		<a href="#">CONTACT</a>
+			  	</li>
+			  </ul>
+			  <ul class="sub-search">
+			  	<li class="search-item">
+			  			<a href="#">
+			  				<i class="fas fa-shopping-bag"></i>
+			  			</a>
+			  	</li>
+			  	<li class="search-item">
+			  		<button class="search" id="search"><i class="fas fa-search"></i></button>
+			  		
+			  	</li>
+			  </ul>
+
+				</div>
+				<div class="search_input" id="search_input_box" >
+<form class="">
+<input type="text" class="" id="search_input" placeholder="Search Here">
+
+<span class="close" id="close">&times</span>
+</form>
+</div>
+	</nav>
+</div>
+
+</div>
+</header>
+<script type="text/javascript">
+	var btt =document.getElementById('search');
+	var molda =document.getElementById('search_input_box');
+	var close =document.getElementById('close');
+	
+		btt.onclick=function () {
+			molda.style.height="50px";
+			molda.style.transition="0.4s";
+					}
+		close.onclick = function() {
+        molda.style.height="0px";
+}
+
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var menu = document.getElementById("menu");
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    menu.classList.add("sticky");
+    navbar.style.boxShadow="none";
+    menu.style.transitionDelay="0.1s";
+    menu.style.transition="0.6s";
+
+  } else {
+    menu.classList.remove("sticky");
+    navbar.style.boxShadow=" 0 10px 30px rgba(0,0,0,.1)"
+  }
+}
+</script>
+</body>
+</html>
